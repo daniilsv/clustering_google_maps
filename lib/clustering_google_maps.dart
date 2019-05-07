@@ -86,6 +86,7 @@ class ClusteringHelper {
   }
 
   updateMap() {
+    print('current zoom: ' + _currentZoom.toString());
     if (_currentZoom < maxZoomForAggregatePoints) {
       updateAggregatedPoints(zoom: _currentZoom);
     } else {
