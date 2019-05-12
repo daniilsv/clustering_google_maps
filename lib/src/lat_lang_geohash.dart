@@ -5,9 +5,10 @@ import 'package:geohash/geohash.dart';
 
 class LatLngAndGeohash {
   final LatLng location;
+  final dynamic content;
   String geohash;
 
-  LatLngAndGeohash(this.location) {
+  LatLngAndGeohash(this.location, [this.content]) {
     geohash = Geohash.encode(location.latitude, location.longitude);
   }
 
