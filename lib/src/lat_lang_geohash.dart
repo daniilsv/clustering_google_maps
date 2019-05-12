@@ -16,6 +16,7 @@ class LatLngAndGeohash {
       : location = LatLng(map['lat'], map['long']) {
     this.geohash =
         Geohash.encode(this.location.latitude, this.location.longitude);
+    this.content = null;
   }
 
   getId() {
